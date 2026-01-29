@@ -1,5 +1,5 @@
 -- Get movement speed from settings if defined
-local resistance = tonumber(minetest.settings:get("leafstride_move_resistance") or 2)
+local resistance = tonumber(minetest.settings:get("leafwalk_move_resistance") or 2)
 
 -- Apply movement attributes to leaves after all mods have been loaded
 minetest.register_on_mods_loaded(function()
