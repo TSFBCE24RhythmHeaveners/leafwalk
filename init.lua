@@ -6,7 +6,7 @@ minetest.register_on_mods_loaded(function()
 	for node,def in pairs(minetest.registered_nodes) do
 		if def.groups and def.groups.leaves and def.groups.leaves > 0 then
 			minetest.override_item(node,{
-				walkable = false,
+				walkable = true,
 				climbable = false,
 				move_resistance = resistance,
 			})
